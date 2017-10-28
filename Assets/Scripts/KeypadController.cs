@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeypadController : MonoBehaviour {
 	public GameObject door;
+	public float waitTime = 3;
 	// Use this for initializationch
 	void Start () {
 		
@@ -17,7 +18,7 @@ public class KeypadController : MonoBehaviour {
 	IEnumerator OnTriggerStay2D (Collider2D other){
 		if ((other.tag == "President") && (Input.GetKey(KeyCode.Space))){
 			door.GetComponent<BoxCollider2D> ().enabled = false;
-			yield return new WaitForSeconds (2);
+			yield return new WaitForSeconds (waitTime);
 			door.GetComponent<BoxCollider2D> ().enabled = true;
 	}
 }
