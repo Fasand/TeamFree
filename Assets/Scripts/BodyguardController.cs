@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BodyguardController : MonoBehaviour {
 
@@ -103,6 +104,10 @@ public class BodyguardController : MonoBehaviour {
 			velocity.y = -speed*0.75f;
 			velocity.x = -speed*0.75f;
 			moving = true;
+		}
+
+		if (Input.GetKey ("r")) {
+			SceneManager.LoadScene ("Level1");
 		}
 
 		if (!moving)
