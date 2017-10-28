@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Vent
+  - Door
+  - Keypad
   layers:
   - Default
   - TransparentFX
@@ -46,6 +49,9 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 2317079879
+    locked: 0
+  - name: Special
+    uniqueID: 2019619419
     locked: 0
   - name: Units
     uniqueID: 1977741525
