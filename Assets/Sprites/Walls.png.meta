@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: d3450f4fada1b46bebdd2b70f8625b9f
-timeCreated: 1509203304
+guid: 471a0fd4feaf94de89cfa5afc56682a3
+timeCreated: 1509203338
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Floor
-    21300002: Floor_1
-    21300004: Floor_2
-    21300006: Floor_3
-    21300008: Floor_4
-    21300010: Floor_5
-    21300012: Floor_0
+    21300000: Walls_0
+    21300002: Walls_1
+    21300004: Walls_2
+    21300006: Walls_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -48,7 +45,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -85,35 +82,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Floor_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Floor_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Floor_2
+      name: Walls_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,13 +90,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Floor_3
+      name: Walls_1
       rect:
         serializedVersion: 2
         x: 32
@@ -135,13 +104,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Floor_4
+      name: Walls_2
       rect:
         serializedVersion: 2
         x: 0
@@ -149,13 +118,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Floor_5
+      name: Walls_3
       rect:
         serializedVersion: 2
         x: 32
@@ -163,7 +132,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
