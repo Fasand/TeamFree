@@ -30030,6 +30030,7 @@ GameObject:
   - component: {fileID: 1091976398}
   - component: {fileID: 1091976400}
   - component: {fileID: 1091976399}
+  - component: {fileID: 1091976401}
   m_Layer: 0
   m_Name: Doors
   m_TagString: Door
@@ -30161,6 +30162,19 @@ Tilemap:
   m_TileRefreshArray:
   - serializedVersion: 1
     m_DirtyIndex: 0
+--- !u!19719996 &1091976401
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091976397}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
 --- !u!1 &1814337736
 GameObject:
   m_ObjectHideFlags: 0
@@ -30171,6 +30185,7 @@ GameObject:
   - component: {fileID: 1814337737}
   - component: {fileID: 1814337739}
   - component: {fileID: 1814337738}
+  - component: {fileID: 1814337740}
   m_Layer: 0
   m_Name: Vents
   m_TagString: Vent
@@ -30302,6 +30317,19 @@ Tilemap:
   m_TileRefreshArray:
   - serializedVersion: 1
     m_DirtyIndex: 0
+--- !u!19719996 &1814337740
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814337736}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
 --- !u!1 &1882494812
 GameObject:
   m_ObjectHideFlags: 0
