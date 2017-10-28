@@ -118,7 +118,7 @@ public class BodyguardController : MonoBehaviour {
 	IEnumerator Fire()
 		{
 		 	allowFire = false;
-		    Vector3 firePoint = new Vector3 (transform.position.x+(0.6f*turnedR), transform.position.y); 
+		    Vector3 firePoint = new Vector3 (transform.position.x+(0.8f*turnedR), transform.position.y); 
 		    Instantiate (bullet, firePoint, transform.rotation);
 		    yield return new WaitForSeconds(fireRate);
 			allowFire = true;

@@ -27,8 +27,9 @@ public class BulletController : MonoBehaviour {
 			Destroy (other.gameObject);
 		}
 
-
-		Destroy (gameObject);
+		if (!(other.collider.tag == "Bodyguard")) {
+			Destroy (gameObject);
+		}
 
 
 }

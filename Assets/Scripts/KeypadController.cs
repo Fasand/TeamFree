@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class KeypadController : MonoBehaviour {
-
-	// Use this for initialization
+	public GameObject door;
+	// Use this for initializationch
 	void Start () {
 		
 	}
@@ -14,9 +14,11 @@ public class KeypadController : MonoBehaviour {
 		
 	}
 
-	//IEnumerator OnTriggerStay (Collider2D other){
-	//	if ((other.tag == "President") && (Input.GetKeyDown(Space)){
-
-	//		{
-	//}
+	IEnumerator OnTriggerStay2D (Collider2D other){
+		if ((other.tag == "President") && (Input.GetKey(KeyCode.Space))){
+			door.GetComponent<BoxCollider2D> ().enabled = false;
+			yield return new WaitForSeconds (2);
+			door.GetComponent<BoxCollider2D> ().enabled = true;
+	}
+}
 }
