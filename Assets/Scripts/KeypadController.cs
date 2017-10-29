@@ -20,7 +20,7 @@ public class KeypadController : MonoBehaviour {
 	IEnumerator OnTriggerStay2D (Collider2D other){
 		if ((other.tag == "President") && (Input.GetKey(KeyCode.Space))){
 			door.GetComponent<BoxCollider2D> ().enabled = false;
-			yield return new WaitForSeconds (waitTime);
+			yield return new WaitForSeconds (3);
 			door.GetComponent<BoxCollider2D> ().enabled = true;
 	}
 }
