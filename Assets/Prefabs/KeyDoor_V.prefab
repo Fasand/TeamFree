@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4368410363997988}
   m_Layer: 0
-  m_Name: Keypad + Door
+  m_Name: KeyDoor_V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
