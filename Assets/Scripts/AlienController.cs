@@ -20,6 +20,7 @@ public class AlienController : MonoBehaviour {
 	void Start () {
 		bodyguard = FindObjectOfType<BodyguardController> ();
 		president = FindObjectOfType<PresidentController> ();
+		animator = GetComponent<Animator> ();
 		allowFire = true;
 		origFirePos = firePos.transform.position;
 	}
