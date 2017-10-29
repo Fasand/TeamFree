@@ -24,17 +24,14 @@ public class BulletControllerBodyguard : MonoBehaviour {
 		
 	}
 
-	IEnumerator OnCollisionEnter2D (Collision2D other)
+	void OnCollisionEnter2D (Collision2D other)
 	{
 		if (other.collider.tag == "President") {
-			president.GetComponent<Animator> ().SetTrigger ("isDying");
-			yield return new WaitForSeconds (0.1f);
+
 			Destroy (other.gameObject);
 			SceneManager.LoadScene ("Level1");
 		}
 		if (other.collider.tag == "Alien") {
-			other.gameObject.GetComponent<Animator> ().SetTrigger ("isDying");
-			yield return new WaitForSeconds (0.1f);
 			Destroy (other.gameObject);
 		}
 

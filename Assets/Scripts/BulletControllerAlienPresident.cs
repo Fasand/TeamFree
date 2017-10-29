@@ -26,17 +26,15 @@ public class BulletControllerAlienPresident : MonoBehaviour {
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 ((shootDirection.x)*speed,(shootDirection.y)*speed);
 	}
 
-	IEnumerator OnCollisionEnter2D (Collision2D other)
+	void OnCollisionEnter2D (Collision2D other)
 	{
 		if (other.collider.tag == "President") {
-			president.GetComponent<Animator> ().SetTrigger ("isDying");
-			yield return new WaitForSeconds (0.1f);
+
 			Destroy (other.gameObject);
 			SceneManager.LoadScene ("Level1");
 		}
 		if (other.collider.tag == "Bodyguard") {
-			bodyguard.GetComponent<Animator> ().SetTrigger ("isDying");
-			yield return new WaitForSeconds (0.1f);
+
 			Destroy (other.gameObject);
 			SceneManager.LoadScene ("Level1");
 		}

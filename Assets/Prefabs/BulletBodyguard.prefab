@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91996be0126514b728f6e1ea2436b026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 20
   bodyguard: {fileID: 114346281466207436, guid: 9592c3505f1ef4c33921be365b5bb9d3,
     type: 2}
   president: {fileID: 114724703304588446, guid: 91f8d2cdc46ff4451ab4d47f67974a86,
@@ -128,8 +128,8 @@ SpriteRenderer:
   m_SortingLayerID: 1977741525
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a8d2f5ffcd41f4fa09c38d87a7b27016, type: 3}
+  m_Color: {r: 0.54137933, g: 0.54137933, b: 0.54137933, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
