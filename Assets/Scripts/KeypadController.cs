@@ -5,6 +5,8 @@ using UnityEngine;
 public class KeypadController : MonoBehaviour {
 	public GameObject door;
 	public float waitTime = 3;
+
+	private
 	// Use this for initializationch
 	void Start () {
 		

@@ -11,7 +11,7 @@ public class BodyguardController : MonoBehaviour {
 
 	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
 	private bool moving;
-	private bool allowFire;
+	private bool allowFire = true;
 
 
 	// Use this for initialization
@@ -20,7 +20,6 @@ public class BodyguardController : MonoBehaviour {
 		//Get and store a reference to the Rigidbody2D component so that we can access it.
 		rb2d = GetComponent<Rigidbody2D> ();
 		turnedR = 1;
-		allowFire = true;
 	}
 
 	void Update(){

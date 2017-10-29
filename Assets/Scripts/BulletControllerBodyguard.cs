@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletController : MonoBehaviour {
+public class BulletControllerBodyguard : MonoBehaviour {
 
 	public float speed;
 	public BodyguardController bodyguard;
@@ -14,20 +14,20 @@ public class BulletController : MonoBehaviour {
 			speed = -speed;
 		}
 	}
-	
-	// Update is called once per frame
+
 	void FixedUpdate () {
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (speed, GetComponent<Rigidbody2D> ().velocity.y);
+
 		
 	}
 
 	void OnCollisionEnter2D (Collision2D other)
 	{
-		if (other.collider.tag == "President") {
+		if (other.collider.tag == "President" || other.collider.tag == "Alien") {
 			Destroy (other.gameObject);
 		}
 
-		if (!(other.collider.tag == "Bodyguard")) {
+		if (!((other.collider.tag == "Bodyguard") || other.collider.tag == "Bullet")) {
 			Destroy (gameObject);
 		}
 

@@ -10,6 +10,8 @@ TagManager:
   - Walls
   - President
   - Bodyguard
+  - Alien
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Bullet
   - 
   - 
   - 

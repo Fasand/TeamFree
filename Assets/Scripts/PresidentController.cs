@@ -7,7 +7,7 @@ public class PresidentController : MonoBehaviour {
 	public float speed;             //Floating point variable to store the player's movement speed.
 
 	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
-	private float turnedR;
+	private float turnedR = 1;
 	private bool moving;
 
 	// Use this for initialization
