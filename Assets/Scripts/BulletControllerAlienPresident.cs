@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 public class BulletControllerAlienPresident : MonoBehaviour {
 
 	public float speed;
+	public BodyguardController bodyguard;
 	public PresidentController president;
 
 	private Vector3 shootDirection;
+	private Animator animator;
 
 	// Use this for initialization
 	void Start ()
 	{
 		president = FindObjectOfType<PresidentController> ();
+		bodyguard = FindObjectOfType<BodyguardController> ();
 		shootDirection = (president.transform.position - transform.position).normalized;
 	}
 
@@ -23,9 +26,17 @@ public class BulletControllerAlienPresident : MonoBehaviour {
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 ((shootDirection.x)*speed,(shootDirection.y)*speed);
 	}
 
-	void OnCollisionEnter2D (Collision2D other)
+	IEnumerator OnCollisionEnter2D (Collision2D other)
 	{
-		if ((other.collider.tag == "President") || (other.collider.tag == "Bodyguard")) {
+		if (other.collider.tag == "President") {
+			president.GetComponent<Animator> ().SetTrigger ("isDying");
+			yield return new WaitForSeconds (0.1f);
+			Destroy (other.gameObject);
+			SceneManager.LoadScene ("Level1");
+		}
+		if (other.collider.tag == "Bodyguard") {
+			bodyguard.GetComponent<Animator> ().SetTrigger ("isDying");
+			yield return new WaitForSeconds (0.1f);
 			Destroy (other.gameObject);
 			SceneManager.LoadScene ("Level1");
 		}
