@@ -13,17 +13,20 @@ public class BodyguardController : MonoBehaviour {
 	private bool moving;
 	private bool allowFire = true;
 
+	private Animator animator;
 
 	// Use this for initialization
 	void Start()
 	{
 		//Get and store a reference to the Rigidbody2D component so that we can access it.
 		rb2d = GetComponent<Rigidbody2D> ();
+		animator = GetComponent<Animator> ();
 		turnedR = 1;
 	}
 
 	void Update(){
 		if ((Input.GetKey(KeyCode.Space)) && (allowFire)) {
+			animator.SetTrigger ("isAttacking");
 			StartCoroutine (Fire());
 		}
 	}
